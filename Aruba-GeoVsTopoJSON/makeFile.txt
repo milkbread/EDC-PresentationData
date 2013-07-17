@@ -1,0 +1,6 @@
+ogr2ogr -f GeoJSON Aruba.json Aruba.shp
+topojson --id-property FID -p -o Aruba_topo.json Aruba.json
+
+----------------------------------------------------------
+
+topojson -o ArubaTest_topo.json Aruba.shp
